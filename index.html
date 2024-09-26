@@ -1,66 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Photography Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Ukázka HTML elementů</title>
+    <!-- base: Definuje základní URL pro všechny relativní odkazy na stránce -->
+    <base href="https://example.com/">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        aside {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        article {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1>H4ndshake</h1>
-            <nav>
-                <ul>
-                    <li><a href="/portfolio.html">Portfolio</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
-                    <li><a href="/support.html">Support</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<h1>WBA</h1>
 
-    <section id="portfolio" class="portfolio-section">
-        <div class="container">
-            <h2>My Work</h2>
-            <div class="grid">
-                <img src="photo1.jpg" alt="Photography 1">
-                <img src="photo2.jpg" alt="Photography 2">
-                <img src="photo3.jpg" alt="Photography 3">
-                <img src="photo4.jpg" alt="Photography 4">
-                <img src="photo5.jpg" alt="Photography 5">
-                <img src="photo6.jpg" alt="Photography 6">
-            </div>
-        </div>
-    </section>
+<!-- article: Samostatný obsah, např. článek nebo část textu -->
+<article>
+    <h2>Article (Článek)</h2>
+    <p>
+        Tento element slouží pro vymezení samostatné části obsahu, například článku. Obsah článku může být nezávislý a mít vlastní strukturu.
+    </p>
+</article>
 
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>bla bla bla</p>
-        </div>
-    </section>
+<!-- aside: Vedlejší obsah, například postranní panel -->
+<aside>
+    <h2>Aside (Vedlejší obsah)</h2>
+    <p>
+        Element <code>&lt;aside&gt;</code> je obsah, který je vedlejší k hlavnímu obsahu, například postranní panel nebo citace.
+    </p>
+</aside>
 
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form action="submit-form.php" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
+<!-- var: Označení proměnné ve vzorcích nebo kódu -->
+<p>
+    <strong>Var (Proměnná)</strong>: V matematických nebo programovacích vzorcích označuje proměnnou. Příklad: <var>x</var>, <var>y</var>.
+</p>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 H4ndshake Photography. All rights reserved.</p>
-        </div>
-    </footer>
+<!-- b: Tučné písmo, bez důrazu na důležitost -->
+<p>
+    <strong>B (Tučné písmo)</strong>: Tento text je <b>tučný</b>. 
+</p>
+
+<!-- bdi: Udržuje směr textu nezávisle na směru okolního textu -->
+<p>
+    <strong>BDI</strong>: Tento text zobrazuje uživatelské jméno, které může mít speciální znaky:  
+    <bdi>arabic اسم</bdi> a <bdi>username123</bdi>.
+</p>
+
+<!-- bdo: Explicitní nastavení směru textu (zprava doleva nebo zleva doprava) -->
+<p>
+    <strong>BDO</strong>: 
+    Tento text je normální, ale <bdo dir="rtl">tento text bude zobrazen zprava doleva.</bdo>
+</p>
+
+<!-- a: Odkaz na jinou stránku -->
+<p>
+    <strong>A</strong>: Odkaz na <a href="/">hlavní stránku</a>, který využívá element <code>&lt;a&gt;</code>.
+</p>
+<br><br>
+<img src="https://i.ytimg.com/vi/viPCocJlJ8I/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDSlkFkybgS9IoW4UVIGCdR9idLNw" alt="sus">
 
 </body>
 </html>
+
+
+
+<!-- Dle tabulky připravte dané HTML značky.
+Sestavte jejich reálné použití v html souboru. Na hodině to budete prezentovat.
+Postačí pouze HTML soubor, nemusíte vytvářet další prezentace
+Tadeáš Birás: article aside var	b base bdi	bdo 
+-->
