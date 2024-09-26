@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Photography Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>H4ndshake</h1>
+            <nav>
+                <ul>
+                    <li><a href="/portfolio.html">Portfolio</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2>My Work</h2>
+            <div class="grid">
+                <img src="photo1.jpg" alt="Photography 1">
+                <img src="photo2.jpg" alt="Photography 2">
+                <img src="photo3.jpg" alt="Photography 3">
+                <img src="photo4.jpg" alt="Photography 4">
+                <img src="photo5.jpg" alt="Photography 5">
+                <img src="photo6.jpg" alt="Photography 6">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>bla bla bla</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="submit-form.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 H4ndshake Photography. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
